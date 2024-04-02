@@ -8,13 +8,13 @@
   ],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "homepage": "https://github.com/32bitkid/sci.js/tree/main/libs/dct#readme",
+  "homepage": "https://github.com/32bitkid/4bitlabs.dct#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/32bitkid/sci.js.git"
+    "url": "https://github.com/32bitkid/4bitlabs.dct"
   },
   "bugs": {
-    "url": "https://github.com/32bitkid/sci.js/issues"
+    "url": "https://github.com/32bitkid/4bitlabs.dct/issues"
   },
   "exports": {
     ".": "./dist/index.js",
