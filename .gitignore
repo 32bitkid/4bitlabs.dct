@@ -1,0 +1,9 @@
+node_modules/
+dist/
+coverage/
+tmp/
+.tscache
+.nvmrc
+.nx/cache
+perf/
+

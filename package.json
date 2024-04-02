@@ -1,0 +1,53 @@
+{
+  "name": "@4bitlabs/dct",
+  "version": "0.0.0",
+  "description": "Discrete cosine transform algorithms in js and ts",
+  "keywords": [
+    "dct",
+    "idct"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "homepage": "https://github.com/32bitkid/sci.js/tree/main/libs/dct#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/32bitkid/sci.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/32bitkid/sci.js/issues"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./fast-dct-8": "./dist/fast-dct-8.js",
+    "./dct-n": "./dist/dct-n.js"
+  },
+  "files": [
+    "./dist/**/*"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "format:fix": "prettier -w .",
+    "clean": "tsc --build --clean",
+    "clean:wipe": "rimraf ./dist",
+    "build": "tsc --build",
+    "test": "jest src/",
+    "version": "conventional-changelog -p eslint -i CHANGELOG.md -s && git add CHANGELOG.md"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@typescript-eslint/eslint-plugin": "^7.5.0",
+    "@typescript-eslint/parser": "^7.5.0",
+    "conventional-changelog-cli": "^4.1.0",
+    "conventional-changelog-eslint": "^5.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-deprecation": "^2.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "jest": "^29.7.0",
+    "prettier": "^3.2.5",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.3"
+  },
+  "author": "J. Holmes <j@holmes.codes>",
+  "license": "ISC"
+}
