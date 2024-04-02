@@ -11,8 +11,6 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
-    "incremental": true,
-    "tsBuildInfoFile": "./dist/.tscache",
     "outDir": "./dist/"
   },
   "include": ["src/**/*"],
