@@ -31,7 +31,8 @@
     "clean:wipe": "rimraf ./dist",
     "build": "tsc --build",
     "test": "jest src/",
-    "version": "conventional-changelog -p eslint -i CHANGELOG.md -s && git add CHANGELOG.md"
+    "version": "conventional-changelog -p eslint -i CHANGELOG.md -s && git add CHANGELOG.md",
+    "prepack": "npm run build"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
