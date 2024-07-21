@@ -1,3 +1,13 @@
+## [1.0.2](https://github.com/32bitkid/4bitlabs.dct/compare/1.0.1...1.0.2) (2024-07-21)
+
+
+### Chore
+
+* dependency update ([f8dfc73](https://github.com/32bitkid/4bitlabs.dct/commit/f8dfc73b9dc72105160afa15da930a096de36247))
+* ensure build before pack ([46dd1cb](https://github.com/32bitkid/4bitlabs.dct/commit/46dd1cb0991e264e5163f5efe72ea0bb079d7a2d))
+
+
+
 ## [1.0.1](https://github.com/32bitkid/4bitlabs.dct/compare/1.0.0...1.0.1) (2024-04-02)
 
 

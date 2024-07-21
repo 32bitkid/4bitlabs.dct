@@ -1,6 +1,6 @@
 {
   "name": "@4bitlabs/dct",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Discrete cosine transform algorithms in js and ts",
   "keywords": [
     "dct",
