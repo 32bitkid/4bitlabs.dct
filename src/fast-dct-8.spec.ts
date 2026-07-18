@@ -1,5 +1,7 @@
-import { FloatVector, IntegerVector } from './vector';
-import { dct, idct } from './fast-dct-8';
+import { describe, expect, it } from 'vitest';
+
+import { dct, idct } from './fast-dct-8.js';
+import type { FloatVector, IntegerVector } from './vector.js';
 
 type Vec = IntegerVector | FloatVector;
 
@@ -12,9 +14,9 @@ describe('dct', () => {
     ],
   ])('should transform [%s]', (input, expected, output, precision = 2) => {
     dct(input, output);
-    output.forEach((val: number, i: number) =>
-      expect(val).toBeCloseTo(expected[i], precision),
-    );
+    output.forEach((val: number, i: number) => {
+      expect(val).toBeCloseTo(expected[i], precision);
+    });
   });
 });
 
@@ -27,8 +29,8 @@ describe('idct', () => {
     ],
   ])('should inverse-transform', (input, expected, output, precision = 2) => {
     idct(input, output);
-    output.forEach((val: number, i: number) =>
-      expect(val).toBeCloseTo(expected[i], precision),
-    );
+    output.forEach((val: number, i: number) => {
+      expect(val).toBeCloseTo(expected[i], precision);
+    });
   });
 });

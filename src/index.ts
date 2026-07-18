@@ -1,8 +1,8 @@
-import { type DiscreteCosineTransformation } from './discrete-cosine-transformation';
-import { createDctOfN } from './dct-n';
-import * as fast from './fast-dct-8';
+import { createDctOfN } from './dct-n.js';
+import type { DiscreteCosineTransformation } from './discrete-cosine-transformation.js';
+import * as fast from './fast-dct-8.js';
 
-export { dct, idct } from './dct';
+export { dct, idct } from './dct.js';
 export { createDctOfN };
 
 export const DCT8 = createDctOfN(8);

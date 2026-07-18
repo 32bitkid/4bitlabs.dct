@@ -1,6 +1,22 @@
 # `@4bitlabs/dct`
 
-JavaScript/TypeScript implementations of the [<abbr title="discrete cosine transform">DCT</abbr>][wikipedia], with support for [`TypedArrays`][TypedArray].
+JavaScript/TypeScript ESM implementations of the [<abbr title="discrete cosine transform">DCT</abbr>][wikipedia], with support for [`TypedArrays`][TypedArray].
+
+## Installation
+
+For node, install with npm:
+
+```
+npm i @4bitlabs/dct
+```
+
+In browsers, import it from an ESM CDN:
+
+```html
+<script type="module">
+  import { watercolorize } from 'https://unpkg.com/@4bitlabs/dct/dist/index.js'
+</script>
+```
 
 ## DCT-II and DCT-III
 

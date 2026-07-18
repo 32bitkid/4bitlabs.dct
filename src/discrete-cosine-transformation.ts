@@ -1,4 +1,4 @@
-import type { Vector } from './vector';
+import type { Vector } from './vector.js';
 
 export interface DiscreteCosineTransformation {
   transform(vIn: Vector, vOut: Vector): void;

@@ -1,5 +1,7 @@
-import { Vector } from './vector';
-import { createDctOfN } from './dct-n';
+import { describe, expect, it } from 'vitest';
+
+import { createDctOfN } from './dct-n.js';
+import type { Vector } from './vector.js';
 
 describe('8-element DCT', () => {
   const dct8 = createDctOfN(8);
@@ -15,9 +17,9 @@ describe('8-element DCT', () => {
       ],
     ])('should transform [%s]', (input, expected, output, precision = 2) => {
       dct8.transform(input, output);
-      output.forEach((val: number, i: number) =>
-        expect(val).toBeCloseTo(expected[i], precision),
-      );
+      output.forEach((val: number, i: number) => {
+        expect(val).toBeCloseTo(expected[i], precision);
+      });
     });
   });
 
@@ -32,9 +34,9 @@ describe('8-element DCT', () => {
       ],
     ])('should inverse-transform', (input, expected, output, precision = 2) => {
       dct8.inverse(input, output);
-      output.forEach((val: number, i: number) =>
-        expect(val).toBeCloseTo(expected[i], precision),
-      );
+      output.forEach((val: number, i: number) => {
+        expect(val).toBeCloseTo(expected[i], precision);
+      });
     });
   });
 });

@@ -1,5 +1,5 @@
-import type { Vector } from './vector';
-import { DiscreteCosineTransformation } from './discrete-cosine-transformation';
+import type { DiscreteCosineTransformation } from './discrete-cosine-transformation.js';
+import type { Vector } from './vector.js';
 
 export function createDctOfN(N: number): DiscreteCosineTransformation {
   const COS = new Float64Array(N * N).map((_, i) => {

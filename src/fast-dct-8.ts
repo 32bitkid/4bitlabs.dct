@@ -1,4 +1,4 @@
-import { Vector } from './vector';
+import type { Vector } from './vector.js';
 
 const C = [0, 0, 0, 0, 0, 0, 0, 0].map((_, i) => Math.cos((Math.PI / 16) * i));
 const [S0, S1, S2, S3, S4, S5, S6, S7] = C.map((val, i) =>

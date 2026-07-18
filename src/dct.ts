@@ -1,4 +1,4 @@
-import { type Vector } from './vector';
+import type { Vector } from './vector.js';
 
 export function dct(vIn: Vector, vOut: Vector) {
   const N = vIn.length;

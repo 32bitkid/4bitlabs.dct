@@ -1,5 +1,7 @@
-import { Vector } from './vector';
-import { dct, idct } from './dct';
+import { describe, expect, it } from 'vitest';
+
+import { dct, idct } from './dct.js';
+import type { Vector } from './vector.js';
 
 describe('dct', () => {
   it.each<
@@ -54,9 +56,9 @@ describe('dct', () => {
     ],
   ])('should transform [%s]', (input, expected, output, precision = 2) => {
     dct(input, output);
-    output.forEach((val: number, i: number) =>
-      expect(val).toBeCloseTo(expected[i], precision),
-    );
+    output.forEach((val: number, i: number) => {
+      expect(val).toBeCloseTo(expected[i], precision);
+    });
   });
 });
 
@@ -91,8 +93,8 @@ describe('idct', () => {
     ],
   ])('should inverse-transform', (input, expected, output, precision = 2) => {
     idct(input, output);
-    output.forEach((val: number, i: number) =>
-      expect(val).toBeCloseTo(expected[i], precision),
-    );
+    output.forEach((val: number, i: number) => {
+      expect(val).toBeCloseTo(expected[i], precision);
+    });
   });
 });
