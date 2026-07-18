@@ -1,3 +1,12 @@
+## [2.0.0](https://github.com/32bitkid/4bitlabs.dct/compare/1.0.2...2.0.0) (2026-07-18)
+
+### ⚠ BREAKING CHANGES
+
+* Migrate build to pure ESM and TypeScript with tsdown
+
+### Features
+
+* Migrate build to pure ESM and TypeScript with tsdown ([81d0d04](https://github.com/32bitkid/4bitlabs.dct/commit/81d0d04e4e9515589ea072254a8ec8249b0bae1d))
 ## [1.0.2](https://github.com/32bitkid/4bitlabs.dct/compare/1.0.1...1.0.2) (2024-07-21)
 
 
