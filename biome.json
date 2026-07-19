@@ -19,6 +19,17 @@
       "preset": "recommended",
       "suspicious": {
         "noDeprecatedImports": "error"
+      },
+      "correctness": {
+        "useImportExtensions": {
+          "level": "error",
+          "options": {
+            "extensionMappings": {
+              "ts": "js",
+              "tsx": "js"
+            }
+          }
+        }
       }
     }
   },
