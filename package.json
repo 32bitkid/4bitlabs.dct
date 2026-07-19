@@ -36,18 +36,12 @@
     "test:dev": "vitest dev",
     "version": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
-  "overrides": {
-    "tsdown": {
-      "yuku-codegen": "0.6.5",
-      "yuku-parser": "0.6.5"
-    }
-  },
   "devDependencies": {
     "@biomejs/biome": "^2.5.4",
     "@vitest/coverage-v8": "^4.1.10",
     "conventional-changelog-cli": "^5.0.0",
     "conventional-changelog-conventionalcommits": "^9.3.1",
-    "tsdown": "^0.22.9",
+    "tsdown": "^0.22.11",
     "typescript": "^6.0.3",
     "vitest": "^4.1.10"
   },
